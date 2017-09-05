@@ -2,7 +2,74 @@
 title = 'Home page!';
 %>
 
-Hello world!
+
+<section class="bg-primary" id="section-search">
+  <div class="container text-center">
+    <h2>Search in Pictures</h2>
+
+    <form action="/search" method="get" class="form-horizontal col-sm-8 col-sm-offset-2">
+      <div class="form-group">
+        <div class="input-group input-group-lg">
+          <div class="input-group-addon"><i class="fa fa-search"></i></div>
+          <input type="text" class="form-control" placeholder='e.g. "to draw"'/>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="bg-default">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <h1>So you're learning a language...</h1>
+
+        <div class="row">
+          <div class="col-sm-6">
+            <p>
+              and you want to make flashcards or picture-based learning aids, right?
+            </p>
+          </div>
+          <div class="col-sm-6">
+            <div class="speech-bubble">¡Hola!</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <h1>But you say...</h1>
+
+        <blockquote>
+          "I can't draw, and I can't find it on Google!"
+        </blockquote>
+      </div>
+    </div>
+
+    <!--<p>Sometimes, it's really hard to draw a concept, but it's important to associate that word or phrase in your new language with the idea it holds instead of the exact word in your own language (because we all know there isn't a one-to-one correlation).</p>-->
+  </div>
+</section>
+
+<section class="bg-secondary">
+  <div class="container">
+    <h1 class="text-center">This is the Community for you!</h1>
+
+    <div class="row">
+      <div class="col-sm-4 col-sm-offset-1">
+        <i class="fa fa-cloud-download fa-5x pull-left"></i>
+        <p>Find words or concepts you want to learn and download pictures that others have used or created before.</p>
+      </div>
+      <div class="col-sm-4 col-sm-offset-2">
+        <i class="fa fa-cloud-upload fa-5x pull-right"></i>
+        <p>If you're a good (or even just decent) artist, upload your drawings for others to use and share the wealth!</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4 col-sm-offset-4">
+        <a href="/sign-up" class="btn btn-primary btn-block btn-sm">Sign Up Now!</a>
+      </div>
+    </div>
+  </div>
+</section>
 
 <ul>
   <% /* for (const item of items) { %>

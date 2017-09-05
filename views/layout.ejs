@@ -1,10 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title><%= title || 'Sample site' %></title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title || 'Speak in Pictures' %></title>
+
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <!-- build:css /styles/global.css -->
+  <link rel="stylesheet" href="/styles/global.css">
+  <!-- endbuild -->
 </head>
 <body>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">
+          <!--<img src="./assets/logo.png">-->
+          Speak in Pictures
+        </a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse pull-right">
+        <ul class="nav navbar-nav">
+          <li><a href="/sign-in">Sign In</a></li>
+          <!--<router-link active-class="active" tag="li" to="/about"><a>About</a></router-link>-->
+          <!--<router-link active-class="active" tag="li" to="/contact"><a>Contact</a></router-link>-->
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+
   <%- body %>
+
+  <footer class="bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Speak in Pictures 2017</p>
+    </div>
+  </footer>
 </body>
 </html>
