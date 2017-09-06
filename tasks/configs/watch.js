@@ -21,7 +21,7 @@ module.exports = (grunt) => {
       files: ['assets/**/*'],
 
       // When assets are changed:
-      tasks: ['sass:default', 'sync:default'],
+      tasks: ['sass:default', 'sync:default', 'compress'],
     },
   });
 
