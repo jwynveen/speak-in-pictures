@@ -8,7 +8,7 @@ module.exports = {
   datastores: {
     default: {
       adapter: 'waterline-postgresql',
-      connection: {
+      connection: process.env.DATABASE_URL || {
         database: process.env.DATABASE_NAME || 'speak-in-pictures',
         host: process.env.DATABASE_HOST,
         user: process.env.DATABASE_USER || 'speak_in_pictures',

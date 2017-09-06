@@ -22,6 +22,7 @@ npm start
 
 First Name | Description | Default
 ------------ | ------------- | ---------------
+DATABASE_URL | Full connection string for database. Alternate to discrete variables below | 
 DATABASE_NAME | Name of database | 'speak-in-pictures',
 DATABASE_HOST | URL/Host of database | 'localhost',
 DATABASE_PORT | Port for database | 5432

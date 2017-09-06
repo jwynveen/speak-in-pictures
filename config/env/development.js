@@ -10,9 +10,9 @@ module.exports = {
        * e.g. 'postgresql://user:password@localhost:5432/databaseName?ssl=false'
        */
       adapter: 'waterline-postgresql',
-      connection: {
+      connection: process.env.DATABASE_URL || {
         database: process.env.DATABASE_NAME || 'speak-in-pictures',
-        host: process.env.DATABASE_HOST || 'localhost',
+        host: process.env.DATABASE_HOST || 'localhostfoo',
         user: process.env.DATABASE_USER || 'speak_in_pictures',
         password: process.env.DATABASE_PASSWORD,
         port: process.env.DATABASE_PORT || 5432,
