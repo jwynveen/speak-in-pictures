@@ -1,7 +1,8 @@
 'use strict';
 
 module.exports = {
-  tableName: 'test_spike',
+  // tableName: 'user',
+  // identity: 'user',
   // schema: true,
   // autoUpdatedAt: true,
   // autoCreatedAt: true,

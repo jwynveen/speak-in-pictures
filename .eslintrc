@@ -9,6 +9,7 @@
     "sourceType": "script"
   },
   "globals": {
+    "DB": true,
     "KoaConfig": true
   },
   "rules": {

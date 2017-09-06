@@ -1,11 +1,10 @@
-/*
 'use strict';
 
 const _ = require('lodash');
 const fs = require('mz/fs');
 const path = require('path');
 const Waterline = require('waterline');
-const sailsPostgres = require('sails-postgresql');
+const postgresAdapter = require('waterline-postgresql');
 const logService = require('../../services/logService');
 
 module.exports = {
@@ -18,9 +17,9 @@ module.exports = {
         for (const file of files) {
           if (/.js$/ig.test(file)) {
             const fileBasename = path.basename(file, '.js');
-            /!* eslint-disable global-require, import/no-dynamic-require *!/
+            /* eslint-disable global-require, import/no-dynamic-require */
             const schema = require(`${modelsPath}/${fileBasename}`);
-            /!* eslint-enable global-require, import/no-dynamic-require *!/
+            /* eslint-enable global-require, import/no-dynamic-require */
 
             const model = _.merge({
               identity: fileBasename.toLowerCase(),
@@ -37,10 +36,12 @@ module.exports = {
 
         const waterlineConfig = {
           adapters: {
-            'sails-postgresql': sailsPostgres,
+            'waterline-postgresql': postgresAdapter,
           },
           connections: KoaConfig.datastores,
         };
+
+        global.DB = {};
 
         await new Promise((resolve, reject) => {
           waterline.initialize(waterlineConfig, (err, orm) => {
@@ -49,7 +50,7 @@ module.exports = {
             }
 
             _.each(orm.collections, (model) => {
-              global[model.globalId || 'unknown'] = model;
+              global.DB[model.globalId || 'unknown'] = model;
             });
 
             return resolve();
@@ -62,4 +63,3 @@ module.exports = {
     }
   },
 };
-*/

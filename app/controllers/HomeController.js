@@ -3,23 +3,10 @@
 module.exports = {
   async index(context) {
     await context.render();
-    /*const pool = new Pool({
-     // user: 'dbuser',
-     host: 'localhost',
-     port: 5432,
-     database: 'speak-in-pictures',
-     // password: 'secretpassword',
-     });
-
-     const results = await pool.query('SELECT * from test_spike');
-     const rows = results.rows;
-
-     pool.end();*/
-
+    /*const users = await DB.User.find();
     await context.render({
-      // items: rows,
-      items: [{ name: 'fake' }],
-    });
+      items: users,
+    });*/
   },
 
   async modernBrowser(context) {
