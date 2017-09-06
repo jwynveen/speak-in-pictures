@@ -25,4 +25,8 @@ module.exports = {
   async modernBrowser(context) {
     await context.render();
   },
+
+  async kitchenSink(context) {
+    await context.render();
+  },
 };

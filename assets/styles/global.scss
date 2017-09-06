@@ -27,6 +27,9 @@ $brand-primary: $color-primary-0;
 $brand-secondary: $color-secondary-1-0;
 $brand-accent: $color-secondary-2-0;
 
+$brand-success: $color-secondary-2-2;
+$brand-danger: #A33643;
+
 @import "_bootstrap.scss";
 
 // The normal $gray-light is still too dark to show up on a dark bkrd, so making it lighter still
@@ -34,6 +37,17 @@ $gray-light: lighten($gray-base, 76.7%); // #c4c4c4
 
 .bg-primary, .bg-secondary, .bg-accent {
   color: #fff;
+
+  .btn-primary {
+    background-color: $color-primary-1;
+    border-color: $color-primary-2;
+  }
+}
+.bg-accent {
+  .btn-success {
+    background-color: $color-secondary-2-1;
+    border-color: $color-secondary-2-0;
+  }
 }
 @include bg-variant('.bg-secondary', $brand-secondary);
 @include bg-variant('.bg-accent', $brand-accent);
@@ -116,4 +130,11 @@ section {
     -webkit-transform: rotateZ(-14.32394487827058deg) translateX(-5px) skewX(-36deg);
     transform: rotateZ(-14.32394487827058deg) translateX(-5px) skewX(-36deg);
   }
+}
+
+.padding-base {
+  padding: $padding-base-vertical $padding-base-horizontal;
+}
+.padding-lg {
+  padding: $padding-large-vertical $padding-large-horizontal;
 }
