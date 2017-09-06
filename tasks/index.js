@@ -8,6 +8,7 @@ const sass = require('./configs/sass');
 const sync = require('./configs/sync');
 const watch = require('./configs/watch');
 const taskDefault = require('./default');
+const taskHeroku = require('./heroku');
 const taskLint = require('./lint');
 const taskBeautify = require('./beautify');
 
@@ -23,6 +24,7 @@ module.exports = (grunt) => {
 
   // Register tasks
   taskDefault(grunt);
+  taskHeroku(grunt);
   taskLint(grunt);
   taskBeautify(grunt);
 };
