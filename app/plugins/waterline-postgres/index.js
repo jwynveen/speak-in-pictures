@@ -26,7 +26,7 @@ module.exports = {
               globalId: fileBasename,
               tableName: fileBasename.toLowerCase(),
               connection: 'default',
-              migrate: 'alter',
+              migrate: process.env.NODE_ENV === 'development' ? 'alter' : 'safe',
               dynamicFinders: false,
             }, schema);
 
