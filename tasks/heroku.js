@@ -6,7 +6,6 @@
  */
 module.exports = (grunt) => {
   grunt.registerTask('heroku', [
-    'clean:default',
     'sass:default',
     'sync:default',
     'compress',

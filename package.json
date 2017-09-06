@@ -21,8 +21,13 @@
     "device": "^0.3.8",
     "grunt": "^1.0.1",
     "grunt-cli": "^1.2.0",
+    "grunt-contrib-clean": "^1.1.0",
     "grunt-contrib-compress": "^1.4.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-eslint": "^19.0.0",
+    "grunt-jsbeautifier": "^0.2.13",
     "grunt-sass": "^2.0.0",
+    "grunt-staged2": "^0.1.1",
     "grunt-sync": "^0.6.2",
     "html-minifier": "^3.4.4",
     "ioredis": "^2.5.0",
@@ -47,11 +52,6 @@
   "devDependencies": {
     "eslint": "^3.19.0",
     "eslint-config-airbnb-base": "^11.2.0",
-    "eslint-plugin-import": "^2.2.0",
-    "grunt-contrib-clean": "^1.1.0",
-    "grunt-contrib-watch": "^1.0.0",
-    "grunt-eslint": "^19.0.0",
-    "grunt-jsbeautifier": "^0.2.13",
-    "grunt-staged2": "^0.1.1"
+    "eslint-plugin-import": "^2.2.0"
   }
 }
