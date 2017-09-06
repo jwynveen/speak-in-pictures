@@ -3,7 +3,7 @@
 const winston = require('winston');
 
 module.exports = {
-  port: 80,
+  port: process.env.PORT || 80,
 
   datastores: {
     default: {
