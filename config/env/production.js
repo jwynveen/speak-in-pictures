@@ -29,6 +29,10 @@ module.exports = {
     prefix: 'production.',
   },
 
+  analytics: {
+    trackingId: process.env.GA_TRACKING_ID,
+  },
+
   log: {
     logger: new winston.Logger({
       level: 'info',

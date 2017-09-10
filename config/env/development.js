@@ -33,4 +33,8 @@ module.exports = {
     simulate: true,
     prefix: 'development.',
   },
+
+  analytics: {
+    trackingId: process.env.GA_TRACKING_ID || 'UA-XXXXXXXXX-X',
+  },
 };

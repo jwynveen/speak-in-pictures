@@ -22,9 +22,11 @@ npm start
 
 First Name | Description | Default
 ------------ | ------------- | ---------------
+NODE_ENV | Current environment. "production" vs anything else | 
 DATABASE_URL | Full connection string for database. Alternate to discrete variables below | 
 DATABASE_NAME | Name of database | 'speak-in-pictures',
 DATABASE_HOST | URL/Host of database | 'localhost',
 DATABASE_PORT | Port for database | 5432
 DATABASE_USER | Username for database connection | 'speak_in_pictures',
 DATABASE_PASSWORD | Password for database connection | 
+GA_TRACKING_ID | Google Analytics tracking ID | 
