@@ -30,7 +30,6 @@ $brand-accent: $color-secondary-2-0;
 $brand-success: $color-secondary-2-2;
 $brand-danger: #A33643;
 
-//$font-size-base: 18px;
 $font-size-base: 14px; // same as _type.scss, but need it defined for the below
 $font-size-h1:            floor(($font-size-base * 3)) !default; // ~42px
 $font-size-h2:            floor(($font-size-base * 2.6)) !default; // ~36px
@@ -38,75 +37,18 @@ $font-size-h3:            floor(($font-size-base * 2.15)) !default; // ~30px
 $font-size-h4:            ceil(($font-size-base * 1.7)) !default; // ~24px
 $font-size-h5:            ceil(($font-size-base * 1.25)) !default; // ~18px
 $font-size-h6:            $font-size-base !default;
-//$font-size-h6:            ceil(($font-size-base * 0.85)) !default; // ~12px
 
 @import "_bootstrap.scss";
 
 // The normal $gray-light is still too dark to show up on a dark bkrd, so making it lighter still
 $gray-light: lighten($gray-base, 76.7%); // #c4c4c4
 
-.bg-primary, .bg-secondary, .bg-accent {
-  color: #fff;
+@import "_typography.scss";
 
-  .btn-primary {
-    background-color: $color-primary-1;
-    border-color: $color-primary-2;
-  }
-}
-.bg-accent {
-  .btn-success {
-    background-color: $color-secondary-2-1;
-    border-color: $color-secondary-2-0;
-  }
-}
-@include bg-variant('.bg-secondary', $brand-secondary);
-@include bg-variant('.bg-accent', $brand-accent);
-@include bg-variant('.bg-gray', $gray-lighter);
-
-.text-primary-color { color: $color-primary-0; }
-.text-accent-color { color: $color-accent-0; }
-.text-emphasize { font-weight: bold; font-size: 1.3em; font-style: italic; }
-
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700');
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Amatic SC', cursive, $font-family-base;
-  font-weight: 700;
-}
-
-.navbar {
-  margin-bottom: 0;
-
-  &.navbar-default {
-    background-color: $color-primary-3;
-    border-color: $color-primary-4;
-    border-radius: 0;
-
-    .navbar-brand {
-      font-family: 'Amatic SC', cursive, $font-family-base;
-      font-size: $font-size-h3;
-      color: $color-accent-2;
-      &:hover {
-        color: $color-accent-1
-      }
-    }
-
-    .navbar-nav > li > a {
-      color: $gray-light;
-      &:focus, &:hover {
-        color: $gray-lighter;
-      }
-    }
-
-  }
-}
-
-section {
-  padding: 50px 0;
-
-  p {
-    line-height: 2em;
-  }
-}
+@import "_layout.scss";
+@import "_meaning-detail.scss";
+@import "_nav.scss";
+@import "_utilities.scss";
 
 .speech-bubble {
   -webkit-box-sizing: content-box;
@@ -149,11 +91,4 @@ section {
     -webkit-transform: rotateZ(-14.32394487827058deg) translateX(-5px) skewX(-36deg);
     transform: rotateZ(-14.32394487827058deg) translateX(-5px) skewX(-36deg);
   }
-}
-
-.padding-base {
-  padding: $padding-base-vertical $padding-base-horizontal;
-}
-.padding-lg {
-  padding: $padding-large-vertical $padding-large-horizontal;
 }

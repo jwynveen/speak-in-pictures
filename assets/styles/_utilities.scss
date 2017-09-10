@@ -1,0 +1,6 @@
+.padding-base { padding: $padding-base-vertical $padding-base-horizontal; }
+.padding-base-hr { padding-left: $padding-base-horizontal; padding-right: $padding-base-horizontal; }
+.padding-base-vr { padding-top: $padding-base-vertical; padding-bottom: $padding-base-vertical; }
+.padding-lg {
+  padding: $padding-large-vertical $padding-large-horizontal;
+}

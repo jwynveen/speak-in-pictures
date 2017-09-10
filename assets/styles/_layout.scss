@@ -1,0 +1,25 @@
+.bg-primary, .bg-secondary, .bg-accent {
+  color: #fff;
+
+  .btn-primary {
+    background-color: $color-primary-1;
+    border-color: $color-primary-2;
+  }
+}
+.bg-accent {
+  .btn-success {
+    background-color: $color-secondary-2-1;
+    border-color: $color-secondary-2-0;
+  }
+}
+@include bg-variant('.bg-secondary', $brand-secondary);
+@include bg-variant('.bg-accent', $brand-accent);
+@include bg-variant('.bg-gray', $gray-lighter);
+
+section {
+  padding: 50px 0;
+
+  p {
+    line-height: 2em;
+  }
+}

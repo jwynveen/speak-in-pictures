@@ -23,7 +23,7 @@ module.exports = {
       if (!view || _.isObject(view)) {
         viewOptions = view;
 
-        const routeInfo = KoaConfig.routeDetails[context.path];
+        const routeInfo = KoaConfig.routeDetails[context._matchedRoute];
         if (routeInfo) {
           viewName = path.join(routeInfo.controller, routeInfo.action);
         }

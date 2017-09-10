@@ -1,0 +1,31 @@
+.text-primary-color { color: $color-primary-0; }
+.text-accent-color { color: $color-accent-0; }
+.text-emphasize { font-weight: bold; font-size: 1.3em; font-style: italic; }
+
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700');
+
+@font-face {
+  font-family: "AmaticFallback";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/AmaticSC-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "AmaticFallback";
+  font-style: normal;
+  font-weight: bold;
+  src: url("/fonts/AmaticSC-Bold.ttf") format("truetype");
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Amatic SC', AmaticFallback, $font-family-base;
+  font-weight: 700;
+  position: relative;
+
+  .heading-label {
+    position: absolute;
+    font-size: 0.25em;
+    top: -1em;
+    font-weight: normal;
+  }
+}

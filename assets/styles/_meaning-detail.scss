@@ -1,0 +1,18 @@
+.meaning-image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  $image-height: 150px;
+  img, .add-image {
+    height: $image-height;
+    margin-bottom: $padding-base-vertical;
+    width: 200px; //todo: remove this with real images
+  }
+
+  .add-image {
+    width: $image-height;
+    border: solid 1px $table-border-color;
+    color: $brand-primary;
+    background-color: #fff;
+  }
+}

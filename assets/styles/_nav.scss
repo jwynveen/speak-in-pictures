@@ -1,0 +1,26 @@
+.navbar {
+  margin-bottom: 0;
+
+  &.navbar-default {
+    background-color: $color-primary-3;
+    border-color: $color-primary-4;
+    border-radius: 0;
+
+    .navbar-brand {
+      font-family: 'Amatic SC', AmaticFallback, $font-family-base;
+      font-size: $font-size-h3;
+      color: $color-accent-2;
+      &:hover {
+        color: $color-accent-1
+      }
+    }
+
+    .navbar-nav > li > a {
+      color: $gray-light;
+      &:focus, &:hover {
+        color: $gray-lighter;
+      }
+    }
+
+  }
+}
