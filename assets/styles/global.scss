@@ -45,10 +45,14 @@ $gray-light: lighten($gray-base, 76.7%); // #c4c4c4
 
 @import "_typography.scss";
 
+/* ===== General/Layout ===== */
 @import "_layout.scss";
-@import "_meaning-detail.scss";
 @import "_nav.scss";
 @import "_utilities.scss";
+
+/* ===== Pages ===== */
+@import "_meaning-detail.scss";
+@import "_search-index.scss";
 
 .speech-bubble {
   -webkit-box-sizing: content-box;
