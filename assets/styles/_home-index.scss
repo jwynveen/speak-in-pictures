@@ -1,0 +1,12 @@
+@media (max-width: ($screen-sm-min - 1)) {
+  #col-objections {
+    border-top: solid 1px $gray-light;
+    margin-top: $padding-base-vertical;
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+  #col-objections {
+    border-left: solid 1px $gray-light;
+  }
+}

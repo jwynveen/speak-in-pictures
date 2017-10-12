@@ -4,3 +4,13 @@
 .padding-lg {
   padding: $padding-large-vertical $padding-large-horizontal;
 }
+
+@media (max-width: $screen-sm-min) {
+  .text-center-sm {
+    text-align: center;
+  }
+}
+
+.img-responsive {
+  display: inline-block;
+}
