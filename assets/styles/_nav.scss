@@ -9,9 +9,15 @@
     .navbar-brand {
       font-family: 'Amatic SC', AmaticFallback, $font-family-base;
       font-size: $font-size-h3;
+      line-height: $font-size-h3;
       color: $color-accent-2;
+      padding: 10px $navbar-padding-horizontal;
       &:hover {
         color: $color-accent-1
+      }
+
+      & > img {
+        display: inline;
       }
     }
 
